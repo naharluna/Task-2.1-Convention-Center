@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/icon.jpg">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="navbar__container container">
+            <div class="navbar__logo">
+                <!-- <img src="./images/logo.jpg" alt="logo"> -->
+                 <a href="#">
+                    Abacus Convention Center
+                 </a>
+            </div>
+
+            <div class="navbar__menu">
+                <div class="navbar__menu_items">
+                    <div class="navbar__menu_list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navigation Mobile -->
+<div class="navbar__mobile-menu">
+    <div class="navbar__mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="navbar__mobile-menu-items">
+        <div class="navbar__mobile-menu-list">
+            <ul>
+                <li ><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Subscribe</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Hero Section -->
+<header class="hero">
+
+  <!-- Slider -->
+  <div class="hero__slider">
+
+    <div class="hero__slide active">
+      <img src="images/image-1.jpg" alt="Wedding Event">
+    </div>
+
+    <div class="hero__slide">
+      <img src="images/image-2.jpg" alt="Conference Event">
+    </div>
+
+    <div class="hero__slide">
+      <img src="images/image-3.jpg" alt="Party Event">
+    </div>
+
+    <div class="hero__slide">
+      <img src="images/image-4.jpg" alt="Corporate Event">
+    </div>
+
+  </div>
+
+
+  <!-- Hero Content -->
+  <div class="hero__container container">
+
+    <div class="hero__content">
+
+      <h1 class="hero__title">
+        The perfect venue for your <br> next event
+      </h1>
+
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Velit officia consequat duis enim velit.
+      </p>
+
+      <a href="#" class="hero__btn">Book Now</a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Slider Navigation -->
+  <div class="hero__navigation">
+
+    <button class="hero__arrow hero__arrow--left">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="hero__arrow hero__arrow--right">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+
+
+  <!-- Slider Indicators -->
+  <div class="hero__dots">
+    <span class="hero__dot active"></span>
+    <span class="hero__dot"></span>
+    <span class="hero__dot"></span>
+    <span class="hero__dot"></span>
+  </div>
+
+</header>
+
+
+<section class="album">
+  <div class="album__container container">
+
+    <div class="album__item">
+      <img src="images/Album.jpg" alt="Wedding Album">
+    </div>
+
+    <div class="album__content">
+
+      <h2 class="album__title">Every Moment is Precious</h2>
+
+      <p class="album__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Numquam porro distinctio sequi cum! Nostrum, eveniet
+        voluptatibus tempore dignissimos sunt corrupti.
+      </p>
+
+      <a href="#" class="album__btn">
+        Explore our album
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <!-- Popup Notification -->
+      <div class="offer__popup" id="offerpopup">
+
+        <div class="offer__icon">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+
+        <div class="offer__content">
+          <p>20% off on next booking</p>
+        </div>
+
+        <button class="offer__close" onclick="closePopup()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Package Section -->
+<section class="package">
+  <div class="package__container container">
+
+    <h2 class="package__title">Our Packages</h2>
+
+    <div class="package__cards">
+
+      <!-- Card 1 -->
+      <div class="package__card">
+        <h3 class="package__price">$300</h3>
+        <h4 class="package__events">Business Fair</h4>
+        <p class="package__description">For most businesses event like book fair, craft fair</p>
+        <ul class="package__Services">
+          <li> <i class="fa-solid fa-check"></i> Limited Space Access</li>
+          <li> <i class="fa-solid fa-check"></i> Security Facility</li>
+          <li> <i class="fa-solid fa-check"></i> Event Support</li>
+          <li> <i class="fa-solid fa-check"></i> Decoration Design</li>
+          <li> <i class="fa-solid fa-check"></i> Per Day Bill</li>
+        </ul>
+
+        <a href="#" class="package__btn">Choose Plan</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="package__card">
+        <h3 class="package__price">$500</h3>
+        <h4 class="package__events">Wedding Basic</h4>
+        <p class="package__description">For weddings with basic plan and limited items</p>
+        <ul class="package__Services">
+            <li>  <i class="fa-solid fa-check"></i> Full space access</li>
+            <li>  <i class="fa-solid fa-check"></i> Food arrangement</li>
+            <li>  <i class="fa-solid fa-check"></i> management support</li>
+            <li>  <i class="fa-solid fa-check"></i> Decoration design</li>
+            <li>  <i class="fa-solid fa-check"></i> Billed as shift</li>
+        </ul>
+
+        <a href="#" class="package__btn">Choose Plan</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="package__card card__featured">
+        <!-- <div class="package__card card__featured"> -->
+            
+          <span class="package__hot">Hot</span>
+          <h3 class="package__price">$800</h3>
+          <h4 class="package__events">Wedding plus</h4>
+           <p class="package__description">For most weddings with premium plans</p>
+          <ul class="package__Services">
+              <li>  <i class="fa-solid fa-check"></i> Full space access</li>
+              <li>  <i class="fa-solid fa-check"></i> Dedicated team</li>
+              <li>  <i class="fa-solid fa-check"></i> Buffet food</li>
+              <li>  <i class="fa-solid fa-check"></i> premium Decoration</li>
+              <li>  <i class="fa-solid fa-check"></i> pay as plan</li>
+          </ul>
+
+            <a href="#" class="package__btn">Choose Plan</a>
+          
+        <!-- </div>     -->
+
+      </div>
+
+      <!-- Card 4 -->
+      <div class="package__card">
+        <h3 class="package__price">$1200</h3>
+        <h4 class="package__events">Corporate Event</h4>
+        <p class="package__description">For most corporate business events</p>
+        <ul class="package__Services">
+            <li>  <i class="fa-solid fa-check"></i> Full space access</li>
+            <li>  <i class="fa-solid fa-check"></i> Dedicated team</li>
+            <li>  <i class="fa-solid fa-check"></i> Buffet food</li>
+            <li>  <i class="fa-solid fa-check"></i> premium Decoration</li>
+            <li>  <i class="fa-solid fa-check"></i> pay as plan</li>
+        </ul>
+
+        <a href="#" class="package__btn">Choose Plan</a>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<!-- Client Review -->
+
+<section class="review">
+  <div class="review__container container">
+     <h2 class="review__title">Happy Client Says</h2>
+     <div class="review__cards">
+
+      <!-- Card 1 -->
+      <div class="review__card">
+        <p class="review__description">Slate helps you see how many more days you need to work
+          to reach your financial goal for the month and year.</p>
+        <img src="./images/client1.jpg" class="review__img">
+        <h4 class="review__name">Regina Miles</h4>
+        <span class="review__role">Banker</span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="review__card">
+        <p class="review__description">Slate helps you see how many more days you need to work
+          to reach your financial goal for the month and year.</p>
+        <img src="./images/client2.jpg" class="review__img">
+        <h4 class="review__name">Jone Drake</h4>
+        <span class="review__role">Banker</span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="review__card">
+        <p class="review__description">Slate helps you see how many more days you need to work
+          to reach your financial goal for the month and year.</p>
+        <img src="./images/client3.jpg" class="review__img">
+        <h4 class="review__name">Cret Yater</h4>
+        <span class="review__role">Banker</span>
+      </div>
+      
+     </div>
+
+  </div>  
+</section>
+
+<section class="faq">
+  <div class="faq__container container">
+    <h2 class="faq__title">Frequently Asked Questions</h2>
+    <div class="faq__wrapper">
+
+      <div class="faq__items">
+        <!-- FAQ 1  -->
+         <div class="faq__item active">
+          <button class="faq__question">
+            What is the difference between event design and event planning?
+            <span class="faq__icon"><i class="fa-solid fa-angle-up"></i></span>
+          </button>
+
+          <div class="faq__answer">
+            <p>Event design and event planning work hand in hand to deliver
+              a successful event. This means we incorporate both planning
+              and design to create the perfect event.</p>
+          </div>
+         </div>
+
+        <!-- FAQ 2  -->
+         <div class="faq__item">
+          <button class="faq__question">
+            What is your refund and cancellation policy?
+            <span class="faq__icon"><i class="fa-solid fa-angle-up"></i></span>
+          </button>
+
+          <div class="faq__answer">
+            <p> We provide flexible cancellation policies depending
+              on the event timeline and booking conditions.</p>
+          </div>
+         </div>
+
+         <div class="faq__item">
+            <button class="faq__question">
+              <span>Do you offer packages for corporate events?</span>
+              <span class="faq__icon"><i class="fa-solid fa-angle-up"></i></span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes, we have dedicated corporate packages starting from $1,200 that include full space access, a dedicated management team, catering, and premium decoration.</p>
+            </div>
+          </div>
+         
+        <!-- FAQ 3  -->
+         <div class="faq__item">
+          <button class="faq__question">
+             How do you keep budgets on track?
+            <span class="faq__icon"><i class="fa-solid fa-angle-up"></i></span>
+          </button>
+
+          <div class="faq__answer">
+            <p> Our team carefully manages vendors, resources and
+              timelines to make sure the event stays within budget.</p>
+          </div>
+         </div>
+      </div>
+
+      <!-- FAQ Image -->
+      <div class="faq__image">
+        <img src="./images/faqimage.jpg" alt="FAQ Image">
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2020 bike. All rights reserved</p>
+
+      <div class="footer__app">
+        <h3 class="footer__app-title">Get the App</h3>
+
+        <a href="#" class="footer__app-btn">
+          <i class="fa-brands fa-apple"></i>
+          <div class="footer__app-text">
+            <span>Download on the</span>
+            <strong>App Store</strong>
+          </div>
+        </a>
+
+        <a href="#" class="footer__app-btn">
+          <i class="fa-brands fa-google-play"></i>
+          <div class="footer__app-text">
+            <span>GET IT ON</span>
+            <strong>Google Play</strong>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
